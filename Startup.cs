@@ -52,7 +52,7 @@ namespace WebApplication3
 
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddAutoMapper();
+            services.AddAutoMapper(typeof(Startup));
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(
                 opt =>

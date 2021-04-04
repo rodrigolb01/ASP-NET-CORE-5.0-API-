@@ -13,5 +13,7 @@ namespace WebApplication3.Domain.Models
         public string Observation { get; set; }
         public string Cep { get; set; }
         public string Address { get; set; }
+        public Product Product { get; set; }
+        public User User { get; set; }
     }
 }

@@ -13,5 +13,6 @@ namespace WebApplication3.Domain.Models
 
         public int CompanyID { get; set; }
         public Company Company { get; set; }
+        public IList<Purchase> Purchases { get; set; } = new List<Purchase>();
     }
 }

@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿ using Microsoft.EntityFrameworkCore;
 using WebApplication3.Domain.Models;
 using System.Collections.Generic;
 using System;
@@ -59,13 +59,6 @@ namespace WebApplication3.Persistence.Context
 
             builder.Entity<User>().HasData
             (
-                new User { 
-                    Id = 100, 
-                    Name = "Lula", 
-                    Login = "Lula@PT13.com.br", 
-                    Password = "12345678" ,
-                    CPF = 02773167351 },
-
                 new User { 
                     Id = 101,
                     Name = "John",
